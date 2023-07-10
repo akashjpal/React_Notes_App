@@ -1,15 +1,19 @@
+// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection } from "firebase/firestore"
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyD_uXh8KfNe11S8qhfQuB_RAzIHrKFTOHE",
-  authDomain: "react-notes-7a013.firebaseapp.com",
-  projectId: "react-notes-7a013",
-  storageBucket: "react-notes-7a013.appspot.com",
-  messagingSenderId: "370854322953",
-  appId: "1:370854322953:web:3e20fb09a3b7f61fc329d8"
+  apiKey: "AIzaSyB90C5-EgrAcaecUuI3VAHmXRXwF5NatyU",
+  authDomain: "react-notes-94c67.firebaseapp.com",
+  projectId: "react-notes-94c67",
+  storageBucket: "react-notes-94c67.appspot.com",
+  messagingSenderId: "677485178030",
+  appId: "1:677485178030:web:1fc35ac7d192f6842d513f"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app)
 export const notesCollection = collection(db, "notes")
